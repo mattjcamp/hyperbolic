@@ -1,15 +1,21 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
+import Navbar from "../components/navbar";
+import YouTubeSubscribe from "../components/youtubeSubscribe";
 
+/*UC0n133tw_Mv1W3CdQ7GLtHg*/
 export default function Home() {
+  let channelid = "UC0n133tw_Mv1W3CdQ7GLtHg";
   return (
     <div>
-      <h1 class="">Home</h1>
-      <Link href={"watch"}>
-        <a class="text-2xl ">About</a>
-      </Link>
+      <Navbar />
+      <div class="flex justify-center py-16">
+        <YouTubeSubscribe
+          // channelName={channelName}
+          channelid={channelid}
+          theme={"default"}
+          layout={"default"}
+          count={"default"}
+        />
+      </div>
     </div>
   );
 }

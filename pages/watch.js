@@ -1,9 +1,10 @@
 import Navbar from "../components/navbar";
+
 export default function Watch() {
   return (
     <div>
       <Navbar />
-      <div class="flex justify-center py-16">
+      <div class="flex justify-center py-8">
         <iframe
           width="560"
           height="315"
